@@ -4,6 +4,7 @@ import Identifier
 
 def waitForClickedPixel(fileName, path):
     window = tk.Tk()
+    window.title("Colour Identifier")
     fileName = checkForPng(fileName, path)
     photo = tk.PhotoImage(file=fileName)
     img = tk.Label(window, image=photo)
